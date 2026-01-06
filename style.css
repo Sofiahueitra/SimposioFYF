@@ -1,0 +1,347 @@
+:root {
+  --verde-oscuro: #1f6f5c;
+  --gris-texto: #333;
+  --blanco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ================= HEADER ================= */
+.header {
+  background-color: var(--verde-oscuro);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================= LOGO ================= */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  color: var(--blanco);
+}
+
+.logo img {
+  height: 46px;
+}
+
+/* ================= NAV ================= */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--blanco);
+  transition: opacity 0.3s ease;
+}
+
+.nav-menu a:hover {
+  opacity: 0.8;
+}
+
+/* ================= MENU MOBILE ================= */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--blanco);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--verde-oscuro);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;      /* centra horizontal */
+    text-align: center;       /* centra texto */
+    padding: 24px 0;
+    gap: 18px;
+  }
+
+  .nav-menu a {
+    color: var(--blanco);
+    font-size: 1.1rem;
+  }
+
+  #menu-toggle:checked ~ .nav {
+    max-height: 320px;
+  }
+
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--verde-oscuro);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .nav-menu a {
+    color: var(--blanco);
+  }
+
+  #menu-toggle:checked ~ .nav {
+    max-height: 300px;
+  }
+
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--verde-oscuro);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  #menu-toggle:checked ~ .nav {
+    max-height: 300px;
+  }
+}
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  height: 85vh;
+  background-image: url('img/FracturaTitulo.jpeg'); /* Reemplazar por tu imagen */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(31, 111, 92, 0.75); /* verde institucional con transparencia */
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  padding: 40px 24px;
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+}
+
+/* ================= CARDS ================= */
+.info-cards {
+  max-width: 1200px;
+  margin: 40px auto 80px; /* sube las cards sobre el hero */
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 40px 28px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+
+.card-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #1f6f5c, #30c09e);
+  color: #ffffff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #1f6f5c;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+.info-cards {
+grid-template-columns: 1fr;
+margin: 32px auto 64px; /* separación segura en mobile */
+}
+}
+
+
+/* Evita solapamientos con el HERO en mobile */
+@media (max-width: 768px) {
+.hero {
+padding-bottom: 40px;
+}
+}
+
+/* ================= WORKSHOP ================= */
+.workshop {
+  background-color: #f0f7f5;
+  padding: 96px 24px;
+}
+
+.workshop-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.workshop-text h2 {
+  font-size: 2.4rem;
+  color: #1f6f5c;
+  margin-bottom: 16px;
+}
+
+.workshop-highlight {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f6f5c;
+  margin-bottom: 24px;
+}
+
+.workshop-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.workshop-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 14px 36px rgba(0,0,0,0.18);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .workshop-container {
+    grid-template-columns: 1fr;
+  }
+
+  .workshop {
+    padding: 72px 24px;
+  }
+
+  .workshop-text h2 {
+    text-align: center;
+  }
+
+  .workshop-highlight {
+    text-align: center;
+  }
+}
