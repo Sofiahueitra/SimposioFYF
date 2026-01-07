@@ -286,6 +286,44 @@ padding-bottom: 40px;
 }
 }
 
+/* ================= OBJETIVO ================= */
+.objective {
+  background-color: #ffffff;
+  padding: 64px 24px;
+}
+
+.objective-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.objective-card {
+  background-color: #f0f7f5;
+  padding: 40px 36px;
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+}
+
+.objective-card h3 {
+  color: #1f6f5c;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
+
+.objective-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .objective {
+    padding: 48px 24px;
+  }
+}
+
+
 /* ================= WORKSHOP ================= */
 .workshop {
   background-color: #f0f7f5;
@@ -345,6 +383,62 @@ padding-bottom: 40px;
     text-align: center;
   }
 }
+
+/* ================= CALL FOR ABSTRACTS (BLOQUE) ================= */
+.call-abstracts {
+  background-color: #1f6f5c;
+  padding: 56px 24px;
+}
+
+.call-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.call-text h2 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.call-text p {
+  color: #e9f5f1;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.call-deadline {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn-call {
+  background-color: #ffffff;
+  color: #1f6f5c;
+  padding: 16px 32px;
+  border-radius: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-call:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .call-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 
 /* ================= SPONSORS ================= */
 .sponsors {
@@ -566,4 +660,158 @@ padding-bottom: 40px;
     padding: 0;
   }
 }
+
+/* ================= PRESENTACIÓN DE RESÚMENES ================= */
+.abstracts {
+  background-color: #f0f7f5;
+  padding: 96px 24px;
+}
+
+.abstracts-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.abstracts h2 {
+  text-align: center;
+  color: #1f6f5c;
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+}
+
+.abstracts-intro {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.abstracts-info ul {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.abstracts-info li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.abstracts-topics h3 {
+  color: #1f6f5c;
+  margin-bottom: 16px;
+}
+
+.abstracts-topics ul li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .abstracts {
+    padding: 72px 24px;
+  }
+}
+
+.abstracts-mail {
+  margin-top: 24px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.abstracts-mail a {
+  color: #1f6f5c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.abstracts-mail a:hover {
+  text-decoration: underline;
+}
+
+/* ================= INSCRIPCIONES ================= */
+.registration {
+  background-color: #ffffff;
+  padding: 96px 24px;
+}
+
+.registration-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.registration h2 {
+  color: #1f6f5c;
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+}
+
+.registration-intro {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.registration-card {
+  background-color: #f0f7f5;
+  padding: 40px 32px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.registration-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* BOTÓN INSCRIBIRSE */
+.btn-register {
+  display: inline-block;
+  background-color: #1f6f5c;
+  color: #ffffff;
+  padding: 14px 36px;
+  border-radius: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 24px 0 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-register:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+/* FORMULARIO */
+.registration-form {
+  margin-top: 32px;
+  text-align: left;
+}
+
+.registration-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.registration-form input,
+.registration-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .registration {
+    padding: 72px 24px;
+  }
+}
+
 
