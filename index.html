@@ -28,18 +28,49 @@
         <span></span>
         </label>
 
-
         <!-- Navegación -->
-        <nav class="nav">
-            <ul class="nav-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="simposio.html">Simposio</a></li>
-                <li><a href="conferencistas.html">Conferencistas</a></li>
-                <li><a href="resumenes.html">Resúmenes</a></li>
-                <li><a href="inscripcion.html">Inscripciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+<nav class="nav">
+  <ul class="nav-menu">
+    <li>
+      <a href="index.html"
+         data-es="Inicio"
+         data-en="Home">Inicio</a>
+    </li>
+
+    <li>
+      <a href="simposio.html"
+         data-es="Simposio"
+         data-en="Symposium">Simposio</a>
+    </li>
+
+    <li>
+      <a href="conferencistas.html"
+         data-es="Conferencistas"
+         data-en="Speakers">Conferencistas</a>
+    </li>
+
+    <li>
+      <a href="resumenes.html"
+         data-es="Resúmenes"
+         data-en="Abstracts">Resúmenes</a>
+    </li>
+
+    <li>
+      <a href="inscripcion.html"
+         data-es="Inscripciones"
+         data-en="Registration">Inscripciones</a>
+    </li>
+
+    <li>
+      <a href="contacto.html"
+         data-es="Contacto"
+         data-en="Contact">Contacto</a>
+    </li>
+
+    <button id="lang-toggle" class="lang-btn">EN</button>
+  </ul>
+</nav>
+
         </div>
     </header>
 
@@ -48,47 +79,73 @@
         <div class="hero-overlay"></div>
 
             <div class="hero-content">
-                <h1>Simposio de Fatiga<br>y Fractura</h1>
+                <h1 
+                    data-es="Simposio de Fatiga y Fractura"
+                    data-en="Fatigue and Fracture Symposium">
+                        Simposio de Fatiga y Fractura
+                </h1>
+
                 <p class="hero-subtitle">Neuquén, Argentina </p>
              </div>
     </section>
 
-    <!-- SECCIÓN CARDS -->
-    <section class="info-cards">
-        <div class="card">
-            <div class="card-icon">
-                📅
-            </div>
-                <h3>Fecha del Evento</h3>
-                <p>
-                    25, 26 y 27 de marzo<br>
-                    08:00–18:00 hs
-                </p>
-        </div>
+<!-- SECCIÓN CARDS -->
+<section class="info-cards">
 
-        <div class="card">
-            <div class="card-icon">
-                    📍
-            </div>
-            <h3>Ubicación</h3>
-            <p>
-            Neuquén, Argentina<br>
-            Edificio de Aulas FAIN<br>
-            Universidad Nacional del Comahue
-            </p>
-        </div>
+  <div class="card">
+    <div class="card-icon">📅</div>
 
-        <div class="card">
-            <div class="card-icon">
-                ✍️
-            </div>
-            <h3>Inscripción</h3>
-            <p>
-                Inscripciones abiertas<br>
-                a partir de febrero 2026
-            </p>
-        </div>
-    </section>
+    <h3
+      data-es="Fecha del Evento"
+      data-en="Event Date">
+      Fecha del Evento
+    </h3>
+
+    <p
+      data-es="25, 26 y 27 de marzo <br> 08:00–18:00 hs"
+      data-en="March 25, 26 and 27 <br> 08:00–18:00">
+      25, 26 y 27 de marzo<br>
+      08:00–18:00 hs
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">📍</div>
+
+    <h3
+      data-es="Ubicación"
+      data-en="Location">
+      Ubicación
+    </h3>
+
+    <p
+      data-es="Neuquén, Argentina<br>FAIN Lecture Building<br>National University of Comahue"
+      data-en="Neuquén, Argentina<br>FAIN Lecture Building<br>National University of Comahue">
+      Neuquén, Argentina<br>
+      Edificio de Aulas FAIN<br>
+      Universidad Nacional del Comahue
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">✍️</div>
+
+    <h3
+      data-es="Inscripción"
+      data-en="Registration">
+      Inscripción
+    </h3>
+
+    <p
+      data-es="Inscripciones abiertas<br>a partir de febrero 2026"
+      data-en="Registration opens<br>February 2026">
+      Inscripciones abiertas<br>
+      a partir de febrero 2026
+    </p>
+  </div>
+
+</section>
+
 
     <section class="objective">
   <div class="objective-container">
@@ -220,4 +277,6 @@
     © 2026 Simposio de Fatiga y Fractura · Todos los derechos reservados
   </div>
 </footer>
+<script src="lang.js"></script>
+
 </html>
