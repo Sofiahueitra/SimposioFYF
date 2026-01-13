@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   const toggleBtn = document.getElementById("lang-toggle");
-  let currentLang = "en";
+  let currentLang = "es";
 
   if (!toggleBtn) return;
 

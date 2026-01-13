@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+<header class="header">
         <div class="nav-container">
 
 
@@ -27,41 +27,82 @@
         <span></span>
         </label>
 
-
         <!-- Navegación -->
-        <nav class="nav">
-            <ul class="nav-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="simposio.html">Simposio</a></li>
-                <li><a href="conferencistas.html">Conferencistas</a></li>
-                <li><a href="resumenes.html">Resúmenes</a></li>
-                <li><a href="inscripcion.html">Inscripciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+<nav class="nav">
+  <ul class="nav-menu">
+    <li>
+      <a href="index.html"
+         data-es="Inicio"
+         data-en="Home">Inicio</a>
+    </li>
+
+    <li>
+      <a href="simposio.html"
+         data-es="Simposio"
+         data-en="Symposium">Simposio</a>
+    </li>
+
+    <li>
+      <a href="conferencistas.html"
+         data-es="Conferencistas"
+         data-en="Speakers">Conferencistas</a>
+    </li>
+
+    <li>
+      <a href="resumenes.html"
+         data-es="Resúmenes"
+         data-en="Abstracts">Resúmenes</a>
+    </li>
+
+    <li>
+      <a href="inscripcion.html"
+         data-es="Inscripciones"
+         data-en="Registration">Inscripciones</a>
+    </li>
+
+    <li>
+      <a href="contacto.html"
+         data-es="Contacto"
+         data-en="Contact">Contacto</a>
+    </li>
+
+    <button id="lang-toggle" class="lang-btn">EN</button>
+  </ul>
+</nav>
+
         </div>
     </header>
-    <section class="registration" id="inscripciones">
+<section class="registration" id="inscripciones">
   <div class="registration-container">
 
-    <h2>Inscripciones</h2>
+    <h2
+      data-es="Inscripciones"
+      data-en="Registration">
+      Inscripciones
+    </h2>
 
-    <p class="registration-intro">
+    <p class="registration-intro"
+      data-es="La participación en el Simposio de Fatiga y Fractura requiere inscripción previa."
+      data-en="Participation in the Fatigue and Fracture Symposium requires prior registration.">
       La participación en el Simposio de Fatiga y Fractura requiere inscripción previa.
     </p>
 
     <div class="registration-card">
 
-      <p>
+      <p
+        data-es="Evento presencial a realizarse en Neuquén, Argentina, los días <strong>25, 26 y 27 de marzo de 2026</strong>."
+        data-en="On-site event to be held in Neuquén, Argentina, on <strong>March 25, 26 and 27, 2026</strong>.">
         Evento presencial a realizarse en Neuquén, Argentina, los días
         <strong>25, 26 y 27 de marzo de 2026</strong>.
       </p>
 
       <!-- BOTÓN A GOOGLE FORM -->
-      <a 
-        href="https://forms.google.com/FORMULARIO_PENDIENTE" 
+      <a
+        href="https://forms.google.com/FORMULARIO_PENDIENTE"
         target="_blank"
-        class="btn-register">
+        class="btn-register"
+        data-es="Inscribirse"
+        data-en="Register">
         Inscribirse
       </a>
 
@@ -72,4 +113,5 @@
 
     
 </body>
+<script src="lang.js"></script>
 </html>

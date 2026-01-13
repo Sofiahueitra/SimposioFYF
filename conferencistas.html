@@ -27,67 +27,137 @@
         <span></span>
         </label>
 
-
         <!-- Navegación -->
-        <nav class="nav">
-            <ul class="nav-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="simposio.html">Simposio</a></li>
-                <li><a href="conferencistas.html">Conferencistas</a></li>
-                <li><a href="inscripcion.html">Inscripciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+<nav class="nav">
+  <ul class="nav-menu">
+    <li>
+      <a href="index.html"
+         data-es="Inicio"
+         data-en="Home">Inicio</a>
+    </li>
+
+    <li>
+      <a href="simposio.html"
+         data-es="Simposio"
+         data-en="Symposium">Simposio</a>
+    </li>
+
+    <li>
+      <a href="conferencistas.html"
+         data-es="Conferencistas"
+         data-en="Speakers">Conferencistas</a>
+    </li>
+
+    <li>
+      <a href="resumenes.html"
+         data-es="Resúmenes"
+         data-en="Abstracts">Resúmenes</a>
+    </li>
+
+    <li>
+      <a href="inscripcion.html"
+         data-es="Inscripciones"
+         data-en="Registration">Inscripciones</a>
+    </li>
+
+    <li>
+      <a href="contacto.html"
+         data-es="Contacto"
+         data-en="Contact">Contacto</a>
+    </li>
+
+    <button id="lang-toggle" class="lang-btn">EN</button>
+  </ul>
+</nav>
+
         </div>
     </header>
 
     <!-- SECCIÓN CONFERENCISTAS -->
-    <section class="speakers" id="conferencistas">
-        <div class="speakers-container">
+<section class="speakers" id="conferencistas">
+  <div class="speakers-container">
 
-            <h2>Conferencistas</h2>
-            <p class="speakers-subtitle">
-                Referentes académicos e industriales invitados al Simposio
-            </p>
+    <h2
+      data-es="Conferencistas"
+      data-en="Speakers">
+      Conferencistas
+    </h2>
 
-            <div class="speakers-grid">
+    <p class="speakers-subtitle"
+      data-es="Referentes académicos e industriales invitados al Simposio"
+      data-en="Academic and industrial leaders invited to the Symposium">
+      Referentes académicos e industriales invitados al Simposio
+    </p>
 
-            <!-- Speaker 1 -->
-                <div class="speaker-card">
-                    <div class="speaker-photo">
-                        <img src="img/kujawski.jpeg" alt="Prof. Daniel Kujawsky">
-                    </div>
-                    <h3>Prof. Daniel Kujawsky</h3>
-                    <p class="speaker-affiliation">Western Michigan University</p>
-                    <p class="speaker-area">“A Meso-Aggregate Model for Fatigue Limit and Threshold Analysis" & <br>
-"A Simple Estimation of Fatigue Crack Growth with R-Ratio Effects"</p>
-                </div>
+    <div class="speakers-grid">
 
-            <!-- Speaker 2 -->
-                <div class="speaker-card">
-                    <div class="speaker-photo">
-                        <img src="img/chapetti.jpeg" alt="Prof. Mirco Chapetti">
-                    </div>
-                    <h3>Prof. Mirco Chapetti</h3>
-                    <p class="speaker-affiliation">Universidad Nacional de Mar del Plata</p>
-                    <p class="speaker-area">"Fracture Mechanics–Based Approaches for Fatigue Design and Integrity Assessment of Metallic Components” & <br>
-“Fatigue Strength Estimation of Metallic Materials and Components with Defects .”</p>
-                </div>
+      <!-- Speaker 1 -->
+      <div class="speaker-card">
+        <div class="speaker-photo">
+          <img src="img/kujawski.jpeg" alt="Prof. Daniel Kujawsky">
+        </div>
+
+        <h3>Prof. Daniel Kujawsky</h3>
+
+        <p class="speaker-affiliation">Western Michigan University</p>
+
+        <p class="speaker-area"
+          data-es="“A Meso-Aggregate Model for Fatigue Limit and Threshold Analysis” &amp;<br>“A Simple Estimation of Fatigue Crack Growth with R-Ratio Effects”"
+          data-en="“A Meso-Aggregate Model for Fatigue Limit and Threshold Analysis” &amp;<br>“A Simple Estimation of Fatigue Crack Growth with R-Ratio Effects”">
+          “A Meso-Aggregate Model for Fatigue Limit and Threshold Analysis” & <br>
+          “A Simple Estimation of Fatigue Crack Growth with R-Ratio Effects”
+        </p>
+      </div>
+
+      <!-- Speaker 2 -->
+      <div class="speaker-card">
+        <div class="speaker-photo">
+          <img src="img/chapetti.jpeg" alt="Prof. Mirco Chapetti">
+        </div>
+
+        <h3>Prof. Mirco Chapetti</h3>
+
+        <p class="speaker-affiliation"
+          data-es="Universidad Nacional de Mar del Plata"
+          data-en="National University of Mar del Plata">
+          Universidad Nacional de Mar del Plata
+        </p>
+
+        <p class="speaker-area"
+          data-es="“Fracture Mechanics–Based Approaches for Fatigue Design and Integrity Assessment of Metallic Components” &amp;<br>“Fatigue Strength Estimation of Metallic Materials and Components with Defects”"
+          data-en="“Fracture Mechanics–Based Approaches for Fatigue Design and Integrity Assessment of Metallic Components” &amp;<br>“Fatigue Strength Estimation of Metallic Materials and Components with Defects”">
+          "Fracture Mechanics–Based Approaches for Fatigue Design and Integrity Assessment of Metallic Components” & <br>
+          “Fatigue Strength Estimation of Metallic Materials and Components with Defects .”
+        </p>
+      </div>
+
       <!-- Speaker 3 -->
-            <!-- Speaker 3 -->
-            <div class="speaker-card">
-                <div class="speaker-photo">
-                    <img src="img/OERTELT.jpeg" alt="Especialistas RUMUL">
-                </div>
-                <h3>M. Eng. Gerhard OERTELT</h3>
-        <p class="speaker-affiliation">CEO, Material2, Representante RUMUL USA</p>
-        <p class="speaker-area">"Optimized HCF Testing Strategy through Random Fatigue Limit Software Solution"</p>
+      <div class="speaker-card">
+        <div class="speaker-photo">
+          <img src="img/OERTELT.jpeg" alt="RUMUL Specialists">
+        </div>
+
+        <h3>M. Eng. Gerhard OERTELT</h3>
+
+        <p class="speaker-affiliation"
+          data-es="CEO, Material2, Representante RUMUL USA"
+          data-en="CEO, Material2, RUMUL USA Representative">
+          CEO, Material2, Representante RUMUL USA
+        </p>
+
+        <p class="speaker-area"
+          data-es="“Optimized HCF Testing Strategy through Random Fatigue Limit Software Solution”"
+          data-en="“Optimized HCF Testing Strategy through Random Fatigue Limit Software Solution”">
+          "Optimized HCF Testing Strategy through Random Fatigue Limit Software Solution"
+        </p>
       </div>
 
     </div>
 
   </div>
 </section>
+
     
 </body>
+<script src="lang.js"></script>
 </html>

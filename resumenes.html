@@ -28,42 +28,103 @@
         <span></span>
         </label>
 
-
         <!-- Navegación -->
-        <nav class="nav">
-            <ul class="nav-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="simposio.html">Simposio</a></li>
-                <li><a href="conferencistas.html">Conferencistas</a></li>
-                <li><a href="resumenes.html">Resúmenes</a></li>
-                <li><a href="inscripcion.html">Inscripciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+<nav class="nav">
+  <ul class="nav-menu">
+    <li>
+      <a href="index.html"
+         data-es="Inicio"
+         data-en="Home">Inicio</a>
+    </li>
+
+    <li>
+      <a href="simposio.html"
+         data-es="Simposio"
+         data-en="Symposium">Simposio</a>
+    </li>
+
+    <li>
+      <a href="conferencistas.html"
+         data-es="Conferencistas"
+         data-en="Speakers">Conferencistas</a>
+    </li>
+
+    <li>
+      <a href="resumenes.html"
+         data-es="Resúmenes"
+         data-en="Abstracts">Resúmenes</a>
+    </li>
+
+    <li>
+      <a href="inscripcion.html"
+         data-es="Inscripciones"
+         data-en="Registration">Inscripciones</a>
+    </li>
+
+    <li>
+      <a href="contacto.html"
+         data-es="Contacto"
+         data-en="Contact">Contacto</a>
+    </li>
+
+    <button id="lang-toggle" class="lang-btn">EN</button>
+  </ul>
+</nav>
+
         </div>
     </header>
-    <!-- PRESENTACIÓN DE RESÚMENES -->
+<!-- PRESENTACIÓN DE RESÚMENES -->
 <section class="abstracts" id="resumenes">
   <div class="abstracts-container">
 
-    <h2>Presentación de Resúmenes</h2>
+    <h2
+      data-es="Presentación de Resúmenes"
+      data-en="Abstract Submission">
+      Presentación de Resúmenes
+    </h2>
 
-    <p class="abstracts-intro">
+    <p class="abstracts-intro"
+      data-es="Se invita a investigadores, profesionales y estudiantes a enviar resúmenes relacionados con la fatiga y fractura de materiales."
+      data-en="Researchers, professionals, and students are invited to submit abstracts related to fatigue and fracture of materials.">
       Se invita a investigadores, profesionales y estudiantes a enviar resúmenes
       relacionados con la fatiga y fractura de materiales.
     </p>
 
     <div class="abstracts-info">
       <ul>
-        <li><strong>Extensión máxima:</strong> 400 palabras</li>
-        <li><strong>Idioma:</strong> Inglés</li>
-        <li><strong>Fecha límite:</strong> 30 de enero de 2026</li>
-        <li><strong>Modalidad:</strong> Presentación oral o póster</li>
+        <li
+          data-es="<strong>Extensión máxima:</strong> 400 palabras"
+          data-en="<strong>Maximum length:</strong> 400 words">
+          <strong>Extensión máxima:</strong> 400 palabras
+        </li>
+
+        <li
+          data-es="<strong>Idioma:</strong> Inglés"
+          data-en="<strong>Language:</strong> English">
+          <strong>Idioma:</strong> Inglés
+        </li>
+
+        <li
+          data-es="<strong>Fecha límite:</strong> 30 de enero de 2026"
+          data-en="<strong>Deadline:</strong> January 30, 2026">
+          <strong>Fecha límite:</strong> 30 de enero de 2026
+        </li>
+
+        <li
+          data-es="<strong>Modalidad:</strong> Presentación oral o póster"
+          data-en="<strong>Presentation type:</strong> Oral or poster presentation">
+          <strong>Modalidad:</strong> Presentación oral o póster
+        </li>
       </ul>
     </div>
 
     <div class="abstracts-topics">
-      <h3>Temáticas de interés</h3>
+      <h3
+        data-es="Temáticas de interés"
+        data-en="Topics of Interest">
+        Temáticas de interés
+      </h3>
+
       <ul>
         <li>Fatigue damage and fracture simulation</li>
         <li>Near-threshold fatigue crack propagation testing</li>
@@ -74,20 +135,23 @@
       </ul>
     </div>
 
-    <p class="abstracts-mail">
-  Los resúmenes deberán enviarse por correo electrónico a Ceferino Steimbreger:
-  <br>
-  <strong>
-    <a href="mailto:simposio.fatiga@ejemplo.edu.ar?subject=Envío%20de%20Resumen%20–%20Simposio%20de%20Fatiga%20y%20Fractura">
-      cefesteim@gmail.com
-    </a>
-  </strong>
-</p>
-
+    <p class="abstracts-mail"
+      data-es="Los resúmenes deberán enviarse por correo electrónico a Ceferino Steimbreger:<br><strong><a href='mailto:simposio.fatiga@ejemplo.edu.ar?subject=Envío%20de%20Resumen%20–%20Simposio%20de%20Fatiga%20y%20Fractura'>cefesteim@gmail.com</a></strong>"
+      data-en="Abstracts must be sent by email to Ceferino Steimbreger:<br><strong><a href='mailto:simposio.fatiga@ejemplo.edu.ar?subject=Abstract%20Submission%20–%20Fatigue%20and%20Fracture%20Symposium'>cefesteim@gmail.com</a></strong>">
+      Los resúmenes deberán enviarse por correo electrónico a Ceferino Steimbreger:
+      <br>
+      <strong>
+        <a href="mailto:simposio.fatiga@ejemplo.edu.ar?subject=Envío%20de%20Resumen%20–%20Simposio%20de%20Fatiga%20y%20Fractura">
+          cefesteim@gmail.com
+        </a>
+      </strong>
+    </p>
 
   </div>
 </section>
 
 
+
 </body>
+<script src="lang.js"></script>
 </html>
