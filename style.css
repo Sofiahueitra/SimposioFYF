@@ -353,6 +353,8 @@ padding-bottom: 40px;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 56px;
   align-items: center;
+  text-align: justify;
+
 }
 
 .workshop-text h2 {
@@ -379,6 +381,8 @@ padding-bottom: 40px;
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 14px 36px rgba(0,0,0,0.18);
+  max-width: 85%;
+  height: auto;
 }
 
 /* ================= RESPONSIVE ================= */
