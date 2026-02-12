@@ -28,13 +28,13 @@
         </label>
 
         <!-- Navegación -->
-<nav class="nav">
-  <ul class="nav-menu">
-    <li>
-      <a href="index.html"
-         data-es="Inicio"
-         data-en="Home">Inicio</a>
-    </li>
+        <nav class="nav">
+          <ul class="nav-menu">
+            <li>
+              <a href="index.html"
+              data-es="Inicio"
+              data-en="Home">Inicio</a>
+            </li>
 
     <li>
       <a href="simposio.html"
@@ -62,56 +62,160 @@
 
     <li>
       <a href="contacto.html"
-         data-es="Contacto"
-         data-en="Contact">Contacto</a>
+         data-es="Información"
+         data-en="Information">Contacto</a>
     </li>
 
     <button id="lang-toggle" class="lang-btn">EN</button>
   </ul>
 </nav>
-
-        </div>
     </header>
-<section class="registration" id="inscripciones">
+
+<!-- ================= INSCRIPCIÓN ================= -->
+<section class="registration" id="inscripcion">
+
   <div class="registration-container">
 
-    <h2
-      data-es="Inscripciones"
+    <h2 
+      data-es="Inscripción"
       data-en="Registration">
-      Inscripciones
+      Inscripción
     </h2>
-
     <p class="registration-intro"
-      data-es="La participación en el Simposio de Fatiga y Fractura requiere inscripción previa."
-      data-en="Participation in the Fatigue and Fracture Symposium requires prior registration.">
-      La participación en el Simposio de Fatiga y Fractura requiere inscripción previa.
-    </p>
-
-    <div class="registration-card">
-
-      <p
         data-es="Evento presencial a realizarse en Neuquén, Argentina, los días <strong>25, 26 y 27 de marzo de 2026</strong>."
         data-en="On-site event to be held in Neuquén, Argentina, on <strong>March 25, 26 and 27, 2026</strong>.">
         Evento presencial a realizarse en Neuquén, Argentina, los días
         <strong>25, 26 y 27 de marzo de 2026</strong>.
       </p>
 
-      <!-- BOTÓN A GOOGLE FORM -->
-      <a
-        href="https://forms.google.com/FORMULARIO_PENDIENTE"
-        target="_blank"
-        class="btn-register"
-        data-es="Inscribirse"
-        data-en="Register">
-        Inscribirse
-      </a>
+    <p class="registration-intro"
+       data-es="Complete el siguiente formulario para formalizar su inscripción al Simposio de Fatiga y Fractura."
+       data-en="Complete the following form to register for the Fatigue and Fracture Symposium.">
+       Complete el siguiente formulario para formalizar su inscripción al Simposio de Fatiga y Fractura.
+    </p>
 
-    </div>
+    <form action="https://formsubmit.co/simposiofatigayfractura@gmail.com"
+          method="POST"
+          enctype="multipart/form-data"
+          class="registration-form">
+
+      <!-- CONFIGURACIÓN FORM -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Nueva inscripción – Simposio Fatiga y Fractura">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="gracias.html">
+
+
+      <!-- DATOS PERSONALES -->
+      <h3 
+        data-es="Datos del Participante"
+        data-en="Participant Information">
+        Datos del Participante
+      </h3>
+
+      <input type="text" name="Nombre" placeholder="Nombre y Apellido" required>
+      <input type="email" name="Email" placeholder="Correo electrónico" required>
+      <input type="text" name="DNI / Pasaporte" placeholder="DNI / Pasaporte" required>
+      <input type="text" name="Institución / Empresa" placeholder="Institución / Empresa">
+      <input type="text" name="País" placeholder="País">
+
+      <!-- RESTRICCIÓN ALIMENTARIA -->
+      <h3 
+        data-es="Participante"
+        data-en="Participant">
+        Participante
+      </h3>
+
+      <select name="Restricción alimentaria">
+        <option data-es="Asistente" data-en="Assistant">Asistente</option>
+        <option data-es="Expositor" data-en="Exhibitor">Expositor</option>
+      </select>
+
+      <!-- CATEGORÍA -->
+      <h3 
+        data-es="Categoría"
+        data-en="Category">
+        Categoría
+      </h3>
+
+      <select name="Categoría" required>
+        <option value=""
+          data-es="Seleccione una opción"
+          data-en="Select an option">
+          Seleccione una opción
+        </option>
+
+        <option data-es="Profesional en la Industria" data-en="Industry Professional ">Profesional en la Industria</option>
+        <option data-es="Docente / Investigador" data-en="Professor / Researcher">Docente / Investigador</option>
+        <option data-es="Estudiante de grado" data-en="Undergraduate Student">Estudiante de grado</option>
+        <option data-es="Estudiante de posgrado" data-en="Graduate Student">Estudiante de posgrado</option>
+      </select>
+
+      <!-- RESTRICCIÓN ALIMENTARIA -->
+      <h3 
+        data-es="Restricción Alimentaria"
+        data-en="Dietary Restrictions">
+        Restricción Alimentaria
+      </h3>
+
+      <select name="Restricción alimentaria">
+        <option data-es="Ninguna" data-en="None">Ninguna</option>
+        <option data-es="Vegetariana" data-en="Vegetarian">Vegetariana</option>
+        <option data-es="Vegana" data-en="Vegan">Vegana</option>
+        <option data-es="Sin gluten" data-en="Gluten-free">Sin gluten</option>
+        <option data-es="Otra" data-en="Other">Otra</option>
+      </select>
+
+      <!-- DATOS BANCARIOS -->
+      <h3 
+        data-es="Datos para Transferencia"
+        data-en="Bank Transfer Details">
+        Datos para Transferencia
+      </h3>
+
+      <div class="bank-box"
+           data-es="Titular: Universidad Nacional del Comahue – Facultad de Ingeniería<br>
+                    Banco: Banco Nación Argentina<br>
+                    CBU: XXXXXXXXXXXXXXXXXXXXXX<br>
+                    Alias: SIMPOSIO.FATIGA<br>
+                    Referencia: Nombre y apellido del participante"
+           data-en="Account Holder: National University of Comahue – Faculty of Engineering<br>
+                    Bank: Banco Nación Argentina<br>
+                    CBU: XXXXXXXXXXXXXXXXXXXXXX<br>
+                    Alias: SIMPOSIO.FATIGA<br>
+                    Reference: Participant full name">
+        Titular: Universidad Nacional del Comahue – Facultad de Ingeniería<br>
+        Banco: Banco Nación Argentina<br>
+        CBU: XXXXXXXXXXXXXXXXXXXXXX<br>
+        Alias: SIMPOSIO.FATIGA<br>
+        Referencia: Nombre y apellido del participante
+      </div>
+
+      <!-- COMPROBANTE -->
+      <label 
+        data-es="Adjuntar comprobante de pago:"
+        data-en="Upload proof of payment:">
+        Adjuntar comprobante de pago:
+      </label>
+
+      <input type="file"
+             name="Comprobante"
+             accept=".jpg,.jpeg,.png,.pdf"
+             required>
+
+      <!-- BOTÓN -->
+      <button type="submit"
+        data-es="Enviar Inscripción"
+        data-en="Submit Registration">
+        Enviar Inscripción
+      </button>
+
+    </form>
 
   </div>
-</section>
 
-    
-</body>
+</section>
 <script src="lang.js"></script>
+<script src="inscripcion.js"></script>
+</body>
 </html>
