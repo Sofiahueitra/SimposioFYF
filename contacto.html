@@ -17,6 +17,7 @@
         <!-- Logo -->
         <div class="logo">
             <img src="img/fainblanco.png" alt="Logo Simposio">
+            <img src="img/fainlogoblanco.png" alt="logo fain">
         </div>
 
         <!-- Botón menú mobile -->
@@ -128,47 +129,98 @@
   <div class="travel-grid">
 
     <!-- Aeropuerto -->
-    <div class="travel-item">
-      <div class="travel-icon">
-        <i data-lucide="plane"></i>
-      </div>
-      <div class="travel-text">
-        <h4 
-          data-es="Desde el Aeropuerto Internacional Presidente Perón (NQN)"
-          data-en="From Presidente Perón International Airport (NQN)">
-          Desde el Aeropuerto Internacional Presidente Perón (NQN)
-        </h4>
-
-        <p 
-          data-es="Aproximadamente 15 minutos en taxi o servicio de traslado."
-          data-en="Approximately 15 minutes by taxi or transfer service.">
-          Aproximadamente 15 minutos en taxi o servicio de traslado.
-        </p>
-      </div>
-    </div>
-
-    <!-- Terminal -->
-    <div class="travel-item">
-      <div class="travel-icon">
-        <i data-lucide="bus"></i>
-      </div>
-      <div class="travel-text">
-        <h4 
-          data-es="Desde la Terminal de Ómnibus"
-          data-en="From the Bus Terminal">
-          Desde la Terminal de Ómnibus
-        </h4>
-
-        <p 
-          data-es="Aproximadamente 10 minutos en taxi o transporte público."
-          data-en="Approximately 10 minutes by taxi or public transportation.">
-          Aproximadamente 10 minutos en taxi o transporte público.
-        </p>
-      </div>
-    </div>
-
+<div class="travel-item">
+  <div class="travel-icon">
+    <i data-lucide="plane"></i>
   </div>
 
+  <div class="travel-text">
+    <h4 
+      data-es="Desde el Aeropuerto Internacional Presidente Perón (NQN) hasta el centro de la ciudad"
+      data-en="From Presidente Perón International Airport (NQN) to downtown">
+      Desde el Aeropuerto Internacional Presidente Perón (NQN)
+    </h4>
+
+    <p 
+      data-es="Aproximadamente 15 minutos en taxi o servicio de traslado."
+      data-en="Approximately 15 minutes by taxi or transfer service.">
+      Aproximadamente 15 minutos en taxi o servicio de traslado.
+    </p>
+
+    <ul class="travel-list">
+
+      <li>
+        <strong>Línea 28:</strong>
+        <span 
+          data-es="Parada sobre calle San Martín. Requiere tarjeta SUBE. Frecuencia estimada: 40 minutos."
+          data-en="Bus stop on San Martín street. SUBE card required. Estimated frequency: 40 minutes.">
+          Parada sobre calle San Martín. Requiere tarjeta SUBE. Frecuencia estimada: 40 minutos.
+        </span>
+      </li>
+
+      <li>
+        <strong>Empresa KO-KO:</strong>
+        <span 
+          data-es="Servicio interurbano sobre Ruta 22 (500 m del aeropuerto). Frecuencia estimada: 20 minutos. Requiere tarjeta KO-KO."
+          data-en="Intercity service on Route 22 (500 m from the airport). Estimated frequency: 20 minutes. KO-KO card required.">
+          Servicio interurbano sobre Ruta 22 (500 m del aeropuerto). Frecuencia estimada: 20 minutos. Requiere tarjeta KO-KO.
+        </span>
+      </li>
+
+      <li>
+        <strong>Tren del Valle:</strong>
+        <span 
+          data-es="Para recorridos y horarios visitar el sitio oficial."
+          data-en="For routes and schedules, please visit the official website.">
+          Para recorridos y horarios visitar el sitio oficial.
+        </span>
+        <a href="https://www.neuquencapital.gov.ar/tren-del-valle/" target="_blank">Ver más</a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+<!-- Terminal -->
+<div class="travel-item">
+  <div class="travel-icon">
+    <i data-lucide="bus"></i>
+  </div>
+
+  <div class="travel-text">
+    <h4 
+      data-es="Desde la Terminal de Ómnibus hasta el centro de la ciudad"
+      data-en="From the Bus Terminal to downtown">
+      Desde la Terminal de Ómnibus
+    </h4>
+
+    <p 
+      data-es="Aproximadamente 10 minutos en taxi o transporte público."
+      data-en="Approximately 10 minutes by taxi or public transportation.">
+      Aproximadamente 10 minutos en taxi o transporte público.
+    </p>
+
+    <p>
+      <strong 
+        data-es="Transporte público (COLE):"
+        data-en="Public transport (COLE):">
+        Transporte público (COLE):
+      </strong>
+      <span 
+        data-es="Líneas 10, 12, 50A, 50B y 9 hacia el centro."
+        data-en="Lines 10, 12, 50A, 50B and 9 to downtown.">
+        Líneas 10, 12, 50A, 50B y 9 hacia el centro.
+      </span>
+    </p>
+
+    <p 
+      data-es="Para más información sobre recorridos consultar los trayectos oficiales o utilizar la aplicación COLE."
+      data-en="For more information about routes, check the official routes or use the COLE mobile app.">
+      Para más información sobre recorridos consultar los trayectos oficiales o utilizar la aplicación COLE.
+    </p>
+
+  </div>
+</div>
+</div>
 </div>
 
 
@@ -186,7 +238,7 @@
 
     <p class="venue-intro"
       data-es="El Simposio se realizará en la Facultad de Ingeniería – Universidad Nacional del Comahue, Neuquén, Argentina."
-      data-en="The Symposium will take place at the School of Engineering – National University of Comahue, Neuquén, Argentina.">
+      data-en="The Symposium will take place at the Faculty of Engineering – National University of Comahue, Neuquén, Argentina.">
       El Simposio se realizará en la Facultad de Ingeniería – Universidad Nacional del Comahue, Neuquén, Argentina.
     </p>
 
@@ -199,14 +251,45 @@
 
     <div class="venue-list">
 
-      <div class="venue-item">Hotel del Comahue</div>
-      <div class="venue-item">Cyan Soho Neuquén</div>
-      <div class="venue-item">Hotel Austral</div>
-      <div class="venue-item">Herradura Hotel Suites</div>
-      <div class="venue-item">Hilton Garden Inn Neuquén</div>
-      <div class="venue-item">Hostel Punto Patagónico Neuquén</div>
+  <a href="https://www.neuquencapital.gov.ar/turismo/alojamientos/hotel-del-comahue/" 
+     target="_blank" 
+     class="venue-item">
+    Hotel del Comahue
+  </a>
 
-    </div>
+  <a href="https://cyansohoneuquen.com.ar/" 
+     target="_blank" 
+     class="venue-item">
+    Cyan Soho Neuquén
+  </a>
+
+  <a href="https://www.australhotel.com.ar/" 
+     target="_blank" 
+     class="venue-item">
+    Hotel Austral
+  </a>
+
+  <a href="https://www.hilton.com/en/locations/argentina/neuquen/" 
+     target="_blank" 
+     class="venue-item">
+    Hilton Garden Inn Neuquén
+  </a>
+
+  <a href="https://www.hostelsdeargentina.com.ar/hostel/click-hostel-neuquen/" 
+     target="_blank" 
+     class="venue-item">
+    Click Hostel Neuquén
+  </a>
+
+<a href="https://www.neuquencapital.gov.ar/turismo/alojamientos/" 
+   target="_blank" 
+   class="venue-item"
+   data-es="Más información"
+   data-en="More information">
+   Más información
+</a>
+</div>
+
 
   </div>
 

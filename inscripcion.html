@@ -17,6 +17,7 @@
         <!-- Logo -->
         <div class="logo">
             <img src="img/fainblanco.png" alt="Logo Simposio">
+            <img src="img/fainlogoblanco.png" alt="logo fain">
         </div>
 
         <!-- Botón menú mobile -->
@@ -83,9 +84,9 @@
     </h2>
     <p class="registration-intro"
         data-es="Evento presencial a realizarse en Neuquén, Argentina, los días <strong>25, 26 y 27 de marzo de 2026</strong>."
-        data-en="On-site event to be held in Neuquén, Argentina, on <strong>March 25, 26 and 27, 2026</strong>.">
+        data-en="On-site event to be held in Neuquén, Argentina, on <strong> March 25, 26 and 27, 2026 </strong>.">
         Evento presencial a realizarse en Neuquén, Argentina, los días
-        <strong>25, 26 y 27 de marzo de 2026</strong>.
+        25, 26 y 27 de marzo de 2026.
       </p>
 
     <p class="registration-intro"
@@ -103,15 +104,54 @@
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_subject" value="Nueva inscripción – Simposio Fatiga y Fractura">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="gracias.html">
+      <input type="hidden" name="_redirect" value="https://sff.uncoma.edu.ar/gracias.html">
 
 
       <!-- DATOS PERSONALES -->
+
       <h3 
   data-es="Datos del Participante"
   data-en="Participant Information">
   Datos del Participante
 </h3>
+
+<select name="Tratamiento" id="tratamiento" required onchange="mostrarOtro('tratamiento','otroTratamiento')">
+  
+  <option value=""
+    data-es="Tratamiento"
+    data-en="Title">
+    Tratamiento
+  </option>
+
+  <option data-es="Dr." data-en="Dr.">Dr.</option>
+
+  <option data-es="Prof." data-en="Prof.">Prof.</option>
+
+  <option data-es="Mg." data-en="M.Sc.">Mg.</option>
+
+  <option data-es="Ing." data-en="Eng.">Ing.</option>
+
+  <option data-es="Lic." data-en="B.A./B.Sc.">Lic.</option>
+
+  <option data-es="Sr." data-en="Mr.">Sr.</option>
+
+  <option data-es="Sra." data-en="Ms.">Sra.</option>
+
+  <option value="Otro"
+    data-es="Otro"
+    data-en="Other">
+    Otro
+  </option>
+
+</select>
+
+<input type="text"
+       name="Otro Tratamiento"
+       id="otroTratamiento"
+       data-es="Especifique cuál"
+       data-en="Please specify"
+       placeholder="Especifique cuál"
+       style="display:none; margin-top:10px;">
 
 <input type="text" name="Nombre"
   data-es="Nombre y Apellido"
@@ -141,17 +181,21 @@
   data-en="Country"
   placeholder="País">
 
-      <!-- RESTRICCIÓN ALIMENTARIA -->
-      <h3 
-        data-es="Participante"
-        data-en="Participant">
-        Participante
-      </h3>
+      <h3 data-es="Tipo de Participación"
+    data-en="Participation Type">
+    Tipo de Participación
+</h3>
 
-      <select name="Restricción alimentaria">
-        <option data-es="Asistente" data-en="Assistant">Asistente</option>
-        <option data-es="Expositor" data-en="Exhibitor">Expositor</option>
-      </select>
+<select name="Tipo de participación" required>
+  <option value=""
+    data-es="Seleccione una opción"
+    data-en="Select an option">
+    Seleccione una opción
+  </option>
+
+  <option data-es="Asistente" data-en="Attendee">Asistente</option>
+  <option data-es="Presentador" data-en="Presenter">Presentador</option>
+</select>
 
       <!-- CATEGORÍA -->
       <h3 
@@ -180,13 +224,66 @@
         Restricción Alimentaria
       </h3>
 
-      <select name="Restricción alimentaria">
-        <option data-es="Ninguna" data-en="None">Ninguna</option>
-        <option data-es="Vegetariana" data-en="Vegetarian">Vegetariana</option>
-        <option data-es="Vegana" data-en="Vegan">Vegana</option>
-        <option data-es="Sin gluten" data-en="Gluten-free">Sin gluten</option>
-        <option data-es="Otra" data-en="Other">Otra</option>
-      </select>
+      <select name="Restricción alimentaria"
+        id="restriccion"
+        onchange="mostrarOtro('restriccion','otraRestriccion')">
+
+  <option data-es="Ninguna" data-en="None">Ninguna</option>
+  <option data-es="Vegetariana" data-en="Vegetarian">Vegetariana</option>
+  <option data-es="Vegana" data-en="Vegan">Vegana</option>
+  <option data-es="Sin gluten" data-en="Gluten-free">Sin gluten</option>
+  <option value="Otro"
+          data-es="Otra"
+          data-en="Other">
+          Otra
+  </option>
+</select>
+
+<input type="text"
+       name="Otra restricción"
+       id="otraRestriccion"
+       data-es="Especifique cuál"
+       data-en="Please specify"
+       placeholder="Especifique cuál"
+       style="display:none; margin-top:10px;">
+
+       <!-- ================= DATOS DE FACTURACIÓN ================= -->
+
+<h3 
+  data-es="Datos de Facturación"
+  data-en="Billing Information">
+  Datos de Facturación
+</h3>
+
+<p class="billing-note"
+   data-es="Por favor verificar que el CUIT se corresponda con la razón social."
+   data-en="Please make sure the Tax ID matches the legal company name.">
+   Por favor verificar que el CUIT se corresponda con la razón social.
+</p>
+
+<input type="text" 
+  name="CUIT/CUIL"
+  data-es="CUIT / CUIL"
+  data-en="Tax ID Number"
+  placeholder="CUIT / CUIL">
+
+<input type="text" 
+  name="Razón Social"
+  data-es="Razón Social"
+  data-en="Legal Company Name"
+  placeholder="Razón Social">
+
+<input type="text" 
+  name="Condición frente a IVA"
+  data-es="Condición frente a IVA"
+  data-en="VAT Status"
+  placeholder="Condición frente a IVA">
+
+<input type="email" 
+  name="Email Facturación"
+  data-es="Email para envío de factura"
+  data-en="Billing email address"
+  placeholder="Email para envío de factura">
 
       <!-- DATOS BANCARIOS -->
       <h3 
@@ -201,32 +298,126 @@
                     Cuenta corriente  Nº 191-093-020781/2
                     CBU Nº 1910093355009302078128<br>
                     CUIT: 30-58676219-9<br>
-                    Referencia: Nombre y apellido del participante"
+                    Referencia: SFF_Apellido y Nombre del participante"
            data-en="Account Holder: UNC-Ingeniería<br>
                     Bank: Banco Credicoop Coop Ltdo<br>
                     Checking account Nº 191-093-020781/2<br>
                     CBU Nº 1910093355009302078128<br>
                     CUIT: 30-58676219-9<br>
-                    Reference: Participant full name">
+                    Reference: SFF_Participant full name">
         Titular: UNC-Ingeniería<br>
         Banco: Banco Credicoop Coop Ltdo<br>
         Cuenta corriente  Nº 191-093-020781/2
         CBU Nº 1910093355009302078128<br>
         CUIT: 30-58676219-9<br>
-        Referencia: Nombre y apellido del participante
+        Referencia: SFF_Apellido y Nombre del participante
       </div>
 
-      <!-- COMPROBANTE -->
-      <label 
-        data-es="Adjuntar comprobante de pago:"
-        data-en="Upload proof of payment:">
-        Adjuntar comprobante de pago:
-      </label>
+      <h3
+        data-es="Instrucciones de Pago en Euros"
+        data-en="Instructions for Euro Payment">
+        Instrucciones de Pago en Euros
+      </h3>
 
-      <input type="file"
-             name="Comprobante"
-             accept=".jpg,.jpeg,.png,.pdf"
-             required>
+      <div class="bank-box"
+      
+           data-es="Titular: UNIV NACIONAL COMAHUE ING<br>
+                    Con: BANCO CREDICOOP C.L. - BUENOS AIRES<br>
+                    Cuenta Nº 093 0207812
+                    Dirección Swift: BCOOARBA<br>
+                    A través de: COMMERZBANK AG - FRANKFURT<br>
+                    Referencia: SFF_Apellido y Nombre del participante"
+           data-en="Pay To: UNC-Ingeniería<br>
+                    With: BANCO CREDICOOP C.L. - BUENOS AIRES<br>
+                    Account NBR:093 0207812<br>
+                    Through:COMMERZBANK AG - FRANKFURT<br>
+                    Swift Address: COBADEFF<br>
+                    Reference: SFF_Participant full name">
+        Titular: UNIV NACIONAL COMAHUE ING<br>
+        Con: BANCO CREDICOOP C.L. - BUENOS AIRES<br>
+        Cuenta Nº 093 0207812
+        Dirección Swift: BCOOARBA<br>
+        A través de: COMMERZBANK AG - FRANKFURT<br>
+        Referencia: SFF_Apellido y Nombre del participante
+      </div>
+
+      <h3
+        data-es="Instrucciones de Pago en Dólares"
+        data-en="Instructions for Dollar Payment">
+        Instrucciones de Pago en Dolares
+      </h3>
+
+      <div class="bank-box"
+      
+           data-es="Titular: UNIV NACIONAL COMAHUE ING<br>
+                    Con: BANCO CREDICOOP C.L. - BUENOS AIRES<br>
+                    Cuenta Nº 093 0207812
+                    Dirección Swift: BCOOARBA<br>
+                    A través de: STANDARD CHARTERED BANK – NEW YORK<br>
+                    Dirección Swift: SCBLUS33<br>
+                    Chips: 0256 <br>
+                    Referencia: SFF_Apellido y Nombre del participante"
+           data-en="Pay To: UNC-Ingeniería<br>
+                    With: BANCO CREDICOOP C.L. - BUENOS AIRES<br>
+                    Swift Address: COBADEFF<br>
+                    Account NBR:093 0207812<br>
+                    Through:STANDARD CHARTERED BANK – NEW YORK<br>
+                    Swift Address:  SCBLUS33 <br>
+                    Chips: 0256 <br>
+                    Reference: SFF_Participant full name">
+        Titular: UNIV NACIONAL COMAHUE ING<br>
+        Con: BANCO CREDICOOP C.L. - BUENOS AIRES<br>
+        Cuenta Nº 093 0207812
+        Dirección Swift: BCOOARBA<br>
+        A través de: STANDARD CHARTERED BANK – NEW YORK<br>
+        Chips: 0256 <br>
+        Referencia: SFF_Apellido y Nombre del participante
+      </div>
+
+<!-- COMPROBANTE -->
+<label 
+  data-es="Adjuntar Orden de Compra o Comprobante de pago (según corresponda):"
+  data-en="Upload Purchase Order or Proof of Payment (as applicable):">
+  Adjuntar Orden de Compra o Comprobante de pago (según corresponda):
+</label>
+
+<div class="file-upload">
+
+  <label for="comprobante" 
+         class="custom-file-label"
+         data-es="Elegir archivo"
+         data-en="Choose file">
+    Elegir archivo
+  </label>
+
+  <span id="file-name"
+        data-es="Ningún archivo seleccionado"
+        data-en="No file selected">
+    Ningún archivo seleccionado
+  </span>
+
+  <input type="file"
+         id="comprobante"
+         name="Comprobante"
+         accept=".jpg,.jpeg,.png,.pdf"
+         required>
+</div>
+
+
+      <!-- ================= COMENTARIOS ================= -->
+
+      <h3 
+        data-es="Comentarios"
+        data-en="Comments">
+        Comentarios
+      </h3>
+
+      <textarea name="Comentarios"
+        rows="4"
+        data-es="Escriba aquí..."
+        data-en="Write here..."
+        placeholder="Escriba aquí cualquier información adicional que considere relevante...">
+    </textarea>
 
       <!-- BOTÓN -->
       <button type="submit"
@@ -241,7 +432,6 @@
 
 </section>
 <script src="lang.js"></script>
-<script src="inscripcion.js"></script>
 </body>
 <!-- FOOTER -->
 <footer class="footer" id="contacto">

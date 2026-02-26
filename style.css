@@ -888,6 +888,23 @@ padding-bottom: 40px;
   border: 1px solid #ccc;
 }
 
+.registration-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  margin-bottom: 20px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registration-form textarea:focus {
+  border-color: #1f6f5c;
+  box-shadow: 0 0 0 2px rgba(31,111,92,0.2);
+  outline: none;
+}
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
   .registration {
@@ -988,6 +1005,36 @@ button:hover {
   font-weight: 500;
 }
 
+.file-upload input[type="file"] {
+  display: none;
+}
+
+.file-upload {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.custom-file-label {
+  background-color: #1f6f5c;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.custom-file-label:hover {
+  background-color: #175747;
+}
+
+#file-name {
+  font-size: 0.9rem;
+  color: #555;
+}
+
 /* ================= CONFIRMACION ================= */
 
 .thankyou {
@@ -1035,7 +1082,7 @@ button:hover {
 }
 
 .thankyou .btn:hover {
-  background: #324a63;
+  background: #1f6f5c;
 }
 
 
@@ -1143,6 +1190,22 @@ button:hover {
   margin: 0;
   color: #555;
   line-height: 1.6;
+}
+
+.travel-list {
+  margin-top: 10px;
+  padding-left: 18px;
+  color: #555; /* fuerza mismo color que los párrafos */
+}
+
+.travel-list li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: #555; /* mismo color que .travel-text p */
+}
+
+.travel-text strong {
+  color: #333; /* opcional: para que el título de cada línea se vea un poquito más marcado */
 }
 
 /* Responsive */
@@ -1278,6 +1341,20 @@ button:hover {
   transform: translateY(-4px);
 }
 
+.venue-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 12px 16px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.venue-item:hover {
+  background-color: #f2f6f5;
+  transform: translateX(4px);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .venue-section {
@@ -1361,5 +1438,78 @@ button:hover {
 .footer-info a:hover {
   opacity: 0.8;
 }
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: #174f43; /* más oscuro que el verde principal */
+  color: #ffffff;
+  padding: 60px 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.footer-info {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.footer-info h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.footer-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  opacity: 0.8;
+}
+
 
 
